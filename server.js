@@ -21,6 +21,7 @@ app.use('/partners', partnerRouter);
 // middleware function express.static() will serve files from the public folder.
 // __dirname - special variable in Node, refers to the absolute path of the current directory of the file that it's in.
 app.use(express.static(__dirname + '/public'));
+console.log("Absolute path:", __dirname);
 
 // use() method is used to set up middleware functions.
 app.use((req, res) => {
